@@ -164,6 +164,9 @@ nav ul li a.active {
     background-image: url('images/brian1.png');
 }
 
+.hero-martin {
+    background-image: url('images/scgirls_sweep1.jpg');
+}
 
 /* =====================================================
    5. MAIN CONTENT
@@ -401,7 +404,7 @@ Or, if you only want to affe
    ================================================== */
 
    /* Carlow trophy page layout - do not remove */
-   
+
 .image-text {
     display: flex;
     gap: 30px;
