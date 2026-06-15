@@ -185,7 +185,11 @@ nav ul li a.active {
     display: block;
     margin: 30px auto;
 }
-
+.content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
 
 /* =====================================================
    6. PAGE HEADERS
@@ -331,6 +335,25 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #cccccc;
 }
 /* =====================================================
    11. TABLES
