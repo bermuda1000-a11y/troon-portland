@@ -1,170 +1,178 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ARTICLE TITLE | Troon Portland Curling Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- =====================================================
+         CHANGE 1
+         Browser Title
+    ====================================================== -->
 
-<style>
+    <title>Club Championship Final | Troon Portland Curling Club</title>
 
-/* ARTICLE */
-.article {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-.article p {
-    line-height: 1.6;
-}
-
-/* Featured image */
-.featured-image {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 6px;
-}
-
-/* Gallery */
-.gallery {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.gallery a {
-    width: 32%;
-}
-
-.gallery img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-/* Lightbox */
-.lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox img {
-    max-width: 800px;
-    max-height: 80vh;
-    border-radius: 6px;
-}
-
-.lightbox:target {
-    display: flex;
-}
-
-/* Page header */
-.page-header {
-    max-width: 800px;
-    margin: auto;
-    padding: 30px 20px 10px;
-}
-
-.page-header h1 {
-    color: #003366;
-    margin-bottom: 5px;
-}
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 15px;
-    color: #0055aa;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-</style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAV -->
+<!-- =====================================================
+     NEWS ARTICLE CHECKLIST
+
+□ Save As (e.g. club-championship-final.html)
+
+□ Change browser title
+□ Change article heading
+□ Change article date
+□ Replace article text
+□ Replace main photograph
+□ Replace caption
+□ Replace gallery photographs
+□ Add article to news.html
+□ Test
+□ Commit
+□ Push
+
+====================================================== -->
+
+<header>
+
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="competitions.html">Competitions</a></li>
-        <li><a href="committee.html">Committee</a></li>
-        <li><a href="archive.html">Archive</a></li>
-        <li><a href="news.html" class="active">News</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="competitions.html">Competitions</a></li>
+<li><a href="committee.html">Committee</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="news.html" class="active">News</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
 </nav>
 
-<!-- HEADER -->
-<div class="page-header">
-    <h1>ARTICLE TITLE</h1>
-    <p>MONTH YEAR</p>
+</header>
+
+<main class="article-page">
+
+
+<!-- =====================================================
+     CHANGE 2
+     Article Heading
+====================================================== -->
+
+<h1>Club Championship Final</h1>
+
+<!-- =====================================================
+     CHANGE 3
+     Date
+====================================================== -->
+
+<p class="article-date">
+July 2026
+</p>
+
+<!-- =====================================================
+     CHANGE 4
+     Main Photograph
+
+     Replace filename only.
+
+     Example:
+
+     images/news/club-final-main.jpg
+
+====================================================== -->
+
+<img
+class="article-photo"
+src="images/news/euan_david1.jpg"
+alt="Club Championship Final">
+
+<!-- =====================================================
+     CHANGE 5
+     Caption
+====================================================== -->
+
+<p class="photo-caption">
+Two great sweepers!
+</p>
+
+<!-- =====================================================
+     CHANGE 6
+     Story
+====================================================== -->
+
+<p>
+ The Carlow Cup was first played for in the 1986-87 early evening league. The cup was gifted to the club by Mr & Mrs Charles Carlow.
+
+Charles (Charlie) was a longstanding servant to the club and held the post of Secretary for 16 years, having previously served as Vice President and President.
+</p>
+
+<p>
+Simply keep adding paragraphs as required.
+</p>
+
+<p>
+The page width is designed for comfortable reading and will automatically adapt on phones and tablets.
+</p>
+<!-- =====================================================
+     CHANGE 7
+     Gallery Photographs
+
+     Replace the filenames only.
+
+====================================================== -->
+
+<div class="gallery">
+
+    <figure>
+        <img src="images/news/home.jpg"
+             alt="Winning team">
+        <figcaption>Skip John Smith receives the trophy.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/news/home.jpg"
+             alt="Finalists">
+        <figcaption>The finalists before the match.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/news/home.jpg"
+             alt="Presentation">
+        <figcaption>Club President presenting the prizes.</figcaption>
+    </figure>
+
 </div>
 
-<!-- ARTICLE -->
-<div class="article">
+<!-- =====================================================
+     CHANGE 8
+     Additional paragraphs (optional)
 
-    <a href="news.html" class="back-link">← Back to News</a>
+     Add more paragraphs here if required.
 
-    <p>
-        Intro paragraph goes here...
-    </p>
+====================================================== -->
 
-    <!-- FEATURED IMAGE (optional) -->
-    <img src="images/your-image.jpg" class="featured-image">
+<!--
+<p>
+Additional text...
+</p>
+-->
 
-    <p>
-        More content here...
-    </p>
+<p class="back-link">
+    <a href="news.html" class="back-button">&larr; Back to News</a>
+</p>
 
-    <!-- GALLERY (optional) -->
-    <div class="gallery">
+</main>
 
-        <a href="#img1">
-            <img src="images/photo1.jpg">
-        </a>
-
-        <a href="#img2">
-            <img src="images/photo2.jpg">
-        </a>
-
-        <a href="#img3">
-            <img src="images/photo3.jpg">
-        </a>
-
-    </div>
-
-    <!-- LIGHTBOX -->
-    <div id="img1" class="lightbox">
-        <a href="#"><img src="images/photo1.jpg"></a>
-    </div>
-
-    <div id="img2" class="lightbox">
-        <a href="#"><img src="images/photo2.jpg"></a>
-    </div>
-
-    <div id="img3" class="lightbox">
-        <a href="#"><img src="images/photo3.jpg"></a>
-    </div>
-
-</div>
-
-<!-- FOOTER -->
 <footer>
-    <p>© Troon Portland Curling Club • Founded 1830 • All Rights Reserved  <a href="privacy.html">Privacy Policy</a></p>
+
+    <p>
+        &copy; Troon Portland Curling Club &bull; Founded 1830 &bull;
+        All Rights Reserved
+        &nbsp;&nbsp;
+        <a href="privacy.html">Privacy Policy</a>
+    </p>
+
 </footer>
 
 </body>
