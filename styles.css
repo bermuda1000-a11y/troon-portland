@@ -135,7 +135,7 @@ nav ul li a.active {
    ===================================================== */
 
 .hero-home {
-    background-image: url('images/icerink1.jpg');
+    background-image: url('images/hero/greenacres_rink1.jpg');
 }
 
 .hero-history {
@@ -143,11 +143,11 @@ nav ul li a.active {
 }
 
 .hero-committee {
-    background-image: url('images/committee.jpg');
+    background-image: url('images/hero/committee1.jpg');
 }
 
 .hero-competitions {
-    background-image: url('images/competitions.jpg');
+    background-image: url('images/hero/stranraer1.jpg');
 }
 
 .hero-archive {
