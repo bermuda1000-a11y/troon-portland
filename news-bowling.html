@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         CHANGE 1
+         Browser Title
+    ====================================================== -->
+
+    <title>Bowling Fundraising Event | Troon Portland Curling Club</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NEWS ARTICLE CHECKLIST
+
+□ Save As (e.g. club-championship-final.html)
+
+□ Change browser title
+□ Change article heading
+□ Change article date
+□ Replace article text
+□ Replace main photograph
+□ Replace caption
+□ Replace gallery photographs
+□ Add article to news.html
+□ Test
+□ Commit
+□ Push
+
+====================================================== -->
+
+<header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="competitions.html">Competitions</a></li>
+<li><a href="committee.html">Committee</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="news.html" class="active">News</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="article-page">
+
+
+<!-- =====================================================
+     CHANGE 2
+     Article Heading
+====================================================== -->
+
+<h1>Bowling Fundraising Event</h1>
+
+<!-- =====================================================
+     CHANGE 3
+     Date
+====================================================== -->
+
+<p class="article-date">
+2 Sept 2026
+</p>
+
+<!-- =====================================================
+     CHANGE 4
+     Main Photograph
+
+     Replace filename only.
+
+     Example:
+
+     images/news/club-final-main.jpg
+
+====================================================== -->
+
+<img
+class="article-photo"
+src="images/news/bowling1.jpg"
+alt="Bowling Fundraising Event">
+
+<!-- =====================================================
+     CHANGE 5
+     Caption
+====================================================== -->
+
+<p class="photo-caption">
+You can't hide talent!
+</p>
+
+<!-- =====================================================
+     CHANGE 6
+     Story
+====================================================== -->
+
+<p>
+ First fundraiser for Troon Portland’s bi-centennial celebrations was a fun day out bowling, courtesy of Troon Bowling Club.<BR>
+ This was organised by the bi-centennial committee and was well attended by members. <BR>
+ Winning rinks received prizes from President Brian Hignett following a lovely buffet provided by the ladies of Troon Bowling Club. Lots of fun was had and this event received a big thumbs up from all who attended.
+</p>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+<!-- =====================================================
+     CHANGE 7
+     Gallery Photographs
+
+     Replace the filenames only.
+
+====================================================== -->
+
+<div class="gallery">
+
+    <figure>
+        <a href="#bowling2">
+            <img src="images/news/Bowling2.jpg"
+                 alt="Bowling">
+        </a>
+        <figcaption>Bowling</figcaption>
+    </figure>
+
+    <figure>
+        <a href="#bowling3">
+            <img src="images/news/Bowling3.jpg"
+                 alt="Bowling">
+        </a>
+        <figcaption>Bowling</figcaption>
+    </figure>
+
+    <figure>
+        <a href="#bowling4">
+            <img src="images/news/Bowling4.jpg"
+                 alt="Bowling">
+        </a>
+        <figcaption>Bowling</figcaption>
+    </figure>
+
+</div>
+
+<!-- Lightboxes -->
+
+<<div id="bowling2" class="lightbox">
+
+    <a href="#bowling4" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/Bowling2.jpg" alt="Bowling">
+    </a>
+
+    <a href="#bowling3" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="bowling3" class="lightbox">
+
+    <a href="#bowling2" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/Bowling3.jpg" alt="Bowling">
+    </a>
+
+    <a href="#bowling4" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="bowling4" class="lightbox">
+
+    <a href="#bowling3" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/Bowling4.jpg" alt="Bowling">
+    </a>
+
+    <a href="#bowling2" class="lightbox-next">&#10095;</a>
+
+</div>
+
+<!-- =====================================================
+     CHANGE 8
+     Additional paragraphs (optional)
+
+     Add more paragraphs here if required.
+
+====================================================== -->
+
+<!--
+<p>
+Additional text...
+</p>
+-->
+
+<p class="back-link">
+    <a href="news.html" class="back-button">&larr; Back to News</a>
+</p>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; Troon Portland Curling Club &bull; Founded 1830 &bull;
+        All Rights Reserved
+        &nbsp;&nbsp;
+        <a href="privacy.html">Privacy Policy</a>
+    </p>
+
+</footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
+
+</body>
+</html>

@@ -9,7 +9,7 @@
          Browser Title
     ====================================================== -->
 
-    <title>Club Championship Final | Troon Portland Curling Club</title>
+    <title>Lochend Trophy| Troon Portland Curling Club</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -59,7 +59,7 @@
      Article Heading
 ====================================================== -->
 
-<h1>Club Championship Final</h1>
+<h1>Lochend Trophy</h1>
 
 <!-- =====================================================
      CHANGE 3
@@ -67,7 +67,7 @@
 ====================================================== -->
 
 <p class="article-date">
-July 2026
+27 March 2026
 </p>
 
 <!-- =====================================================
@@ -82,10 +82,12 @@ July 2026
 
 ====================================================== -->
 
-<img
-class="article-photo"
-src="images/news/euan_david1.jpg"
-alt="Club Championship Final">
+<a href="#lochend1">
+    <img
+        class="article-photo"
+        src="images/news/lochend1.jpg"
+        alt="Lochend Trophy Troon Portland Curling Club">
+</a>
 
 <!-- =====================================================
      CHANGE 5
@@ -93,7 +95,7 @@ alt="Club Championship Final">
 ====================================================== -->
 
 <p class="photo-caption">
-Two great sweepers!
+
 </p>
 
 <!-- =====================================================
@@ -102,17 +104,17 @@ Two great sweepers!
 ====================================================== -->
 
 <p>
- The Carlow Cup was first played for in the 1986-87 early evening league. The cup was gifted to the club by Mr & Mrs Charles Carlow.
-
-Charles (Charlie) was a longstanding servant to the club and held the post of Secretary for 16 years, having previously served as Vice President and President.
+On 18 November 2025, Troon Portland held their annual Bonspeil at Stranraer to contest the Lochend Trophy. <BR>
+    This magnificent trophy was presented to the club in 1961 by the then Club President Mr James M. Wood. Four teams skipped by Bert, Ewan, Mara and Aileen competed, with Mara’s rink being the winners.
+On closer inspection the base of the trophy is as notable as the top!
 </p>
 
 <p>
-Simply keep adding paragraphs as required.
+
 </p>
 
 <p>
-The page width is designed for comfortable reading and will automatically adapt on phones and tablets.
+
 </p>
 <!-- =====================================================
      CHANGE 7
@@ -125,24 +127,47 @@ The page width is designed for comfortable reading and will automatically adapt 
 <div class="gallery">
 
     <figure>
-        <img src="images/news/home.jpg"
-             alt="Winning team">
-        <figcaption>Skip John Smith receives the trophy.</figcaption>
+        <a href="#lochend2">
+            <img src="images/news/lochend2.jpg" alt="Lochend Trophy Troon Portland Curling Club">
+                 
+        </a>
+        <figcaption></figcaption>
     </figure>
 
-    <figure>
-        <img src="images/news/home.jpg"
-             alt="Finalists">
-        <figcaption>The finalists before the match.</figcaption>
-    </figure>
+    
+</div>
 
-    <figure>
-        <img src="images/news/home.jpg"
-             alt="Presentation">
-        <figcaption>Club President presenting the prizes.</figcaption>
-    </figure>
+<!-- Lightboxes -->
+
+ <div id="lochend1" class="lightbox">
+
+    <a href="#lochend2" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/lochend1.jpg"
+             alt="Lochend Trophy Troon Portland Curling Club">
+    </a>
+
+    <a href="#lochend2" class="lightbox-next">&#10095;</a>
 
 </div>
+
+
+<div id="lochend2" class="lightbox">
+
+    <a href="#lochend1" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/lochend2.jpg"
+             alt="Lochend Trophy Troon Portland Curling Club">
+    </a>
+
+    <a href="#lochend1" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+
 
 <!-- =====================================================
      CHANGE 8
@@ -174,6 +199,15 @@ Additional text...
     </p>
 
 </footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
 
 </body>
 </html>

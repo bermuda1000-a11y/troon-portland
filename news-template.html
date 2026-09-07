@@ -9,7 +9,7 @@
          Browser Title
     ====================================================== -->
 
-    <title>Club Championship Final | Troon Portland Curling Club</title>
+    <title>AGM| Troon Portland Curling Club</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -59,7 +59,7 @@
      Article Heading
 ====================================================== -->
 
-<h1>Club Championship Final</h1>
+<h1>AGM and Dinner</h1>
 
 <!-- =====================================================
      CHANGE 3
@@ -67,7 +67,7 @@
 ====================================================== -->
 
 <p class="article-date">
-July 2026
+27 March 2026
 </p>
 
 <!-- =====================================================
@@ -82,10 +82,12 @@ July 2026
 
 ====================================================== -->
 
-<img
-class="article-photo"
-src="images/news/euan_david1.jpg"
-alt="Club Championship Final">
+<a href="#agm1">
+    <img
+        class="article-photo"
+        src="images/news/agm1.jpg"
+        alt="AGM Troon Portland Curling Club">
+</a>
 
 <!-- =====================================================
      CHANGE 5
@@ -93,7 +95,7 @@ alt="Club Championship Final">
 ====================================================== -->
 
 <p class="photo-caption">
-Two great sweepers!
+
 </p>
 
 <!-- =====================================================
@@ -102,17 +104,15 @@ Two great sweepers!
 ====================================================== -->
 
 <p>
- The Carlow Cup was first played for in the 1986-87 early evening league. The cup was gifted to the club by Mr & Mrs Charles Carlow.
-
-Charles (Charlie) was a longstanding servant to the club and held the post of Secretary for 16 years, having previously served as Vice President and President.
+Troon Portland held their AGM and dinner on 27 March 2026 at Prestwick St Nicholas Golf Club where the winning rinks were presented with their trophies by Mrs Kirsty Letton MBE.
 </p>
 
 <p>
-Simply keep adding paragraphs as required.
+This brings the curling season to a close for the 2025/26 season.
 </p>
 
 <p>
-The page width is designed for comfortable reading and will automatically adapt on phones and tablets.
+
 </p>
 <!-- =====================================================
      CHANGE 7
@@ -125,22 +125,85 @@ The page width is designed for comfortable reading and will automatically adapt 
 <div class="gallery">
 
     <figure>
-        <img src="images/news/home.jpg"
-             alt="Winning team">
-        <figcaption>Skip John Smith receives the trophy.</figcaption>
+        <a href="#agm2">
+            <img src="images/news/agm2.jpg" alt="AGM Troon Portland Curling Club">
+                 
+        </a>
+        <figcaption></figcaption>
+    </figure>
+
+     <figure>
+        <a href="#agm3">
+            <img src="images/news/agm3.jpg" alt="AGM Troon Portland Curling Club">
+                 
+        </a>
+        <figcaption></figcaption>
     </figure>
 
     <figure>
-        <img src="images/news/home.jpg"
-             alt="Finalists">
-        <figcaption>The finalists before the match.</figcaption>
+        <a href="#agm4">
+            <img src="images/news/agm4.jpg" alt="AGM Troon Portland Curling Club">
+                 
+        </a>
+        <figcaption></figcaption>
     </figure>
+    
+</div>
 
-    <figure>
-        <img src="images/news/home.jpg"
-             alt="Presentation">
-        <figcaption>Club President presenting the prizes.</figcaption>
-    </figure>
+<!-- Lightboxes -->
+
+ <div id="agm1" class="lightbox">
+
+    <a href="#agm4" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/agm1.jpg"
+             alt="AGM Troon Portland Curling Club">
+    </a>
+
+    <a href="#agm2" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="agm2" class="lightbox">
+
+    <a href="#agm1" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/agm2.jpg"
+             alt="AGM Troon Portland Curling Club">
+    </a>
+
+    <a href="#agm3" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="agm3" class="lightbox">
+
+    <a href="#agm2" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/agm3.jpg"
+             alt="AGM Troon Portland Curling Club">
+    </a>
+
+    <a href="#agm4" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="agm4" class="lightbox">
+
+    <a href="#agm3" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/agm4.jpg"
+             alt="AGM Troon Portland Curling Club">
+    </a>
+
+    <a href="#agm1" class="lightbox-next">&#10095;</a>
 
 </div>
 
@@ -174,6 +237,15 @@ Additional text...
     </p>
 
 </footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
 
 </body>
 </html>
