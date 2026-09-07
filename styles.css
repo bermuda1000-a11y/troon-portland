@@ -365,6 +365,13 @@ nav ul li a.active {
     background: #00508f;
 }
 
+.league-table {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* =====================================================
    10. GALLERY
    ===================================================== */
