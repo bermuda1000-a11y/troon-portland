@@ -76,7 +76,18 @@ nav ul li a.active {
     background-color: #0055aa;
     border-radius: 4px;
 }
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        padding: 8px 5px;
+    }
 
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
 
 /* =====================================================
    3. HERO BANNER
