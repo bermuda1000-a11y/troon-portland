@@ -53,8 +53,9 @@ h2 {
 nav {
     background-color: #003366;
     padding: 15px 0;
+    position: relative;
+    z-index: 1000;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -76,6 +77,46 @@ nav ul li a.active {
     background-color: #0055aa;
     border-radius: 4px;
 }
+
+/* Competition dropdown */
+
+nav > ul > li.dropdown {
+    position: relative;
+    display: block;
+}
+
+nav > ul > li.dropdown > ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    min-width: 180px;
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+    flex-direction: column !important;
+    gap: 0;
+    z-index: 9999;
+}
+
+nav > ul > li.dropdown:hover > ul.dropdown-menu {
+    display: flex;
+}
+
+nav > ul > li.dropdown > ul.dropdown-menu li {
+    width: 100%;
+}
+
+nav > ul > li.dropdown > ul.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: white;
+}
+
+/* Mobile navigation */
+
 @media (max-width: 600px) {
     nav ul {
         flex-wrap: wrap;
@@ -88,7 +129,6 @@ nav ul li a.active {
         padding: 5px 8px;
     }
 }
-
 /* =====================================================
    3. HERO BANNER
    ===================================================== */
