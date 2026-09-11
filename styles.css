@@ -22,6 +22,7 @@ CONTENTS
 14. Lists
 15. Image Beside Text
 16. Committee Table
+18. FIXTURES PAGE.
 
 ==================================================
 */
@@ -685,7 +686,7 @@ Or, if you only want to affe
 }
 
 /* =====================================================
-   17. FIXTURES PAGE.
+   18. FIXTURES PAGE.
    ===================================================== */
 
 .fixtures-intro {
@@ -755,6 +756,15 @@ Or, if you only want to affe
     border-radius: 5px;
     font-weight: bold;
     white-space: nowrap;
+}
+
+.fixture-match {
+    display: block;
+    line-height: 1.7;
+}
+
+.fixture-match + .fixture-match {
+    margin-top: 8px;
 }
 
 /* Fixtures page content width */
