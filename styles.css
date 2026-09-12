@@ -775,3 +775,36 @@ Or, if you only want to affe
     margin: 0 auto;
     padding: 20px;
 }
+/* Team lists */
+.team-list {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin: 20px auto 30px;
+}
+
+.team-list th {
+    background-color: #003366;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.team-list td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.team-list td:first-child {
+    width: 30%;
+    font-weight: bold;
+}
+
+.team-list tr:nth-child(even) {
+    background-color: #f7f9fb;
+}
+
+.team-list + h3 {
+    margin-top: 30px;
+}
