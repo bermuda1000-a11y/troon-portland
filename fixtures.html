@@ -421,5 +421,36 @@
 
 </main>
 
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Troon Portland Curling Club • Founded 1830 • All Rights Reserved
+<a href="privacy.html">Privacy Policy</a> •
+<a href="https://www.facebook.com/TroonPortlandCurling" target="_blank" rel="noopener noreferrer">Facebook</a> •
+troonportlandcurling@gmail.com</p>
+</footer>
+
+<script>
+const competitionDropdown = document.querySelector('nav li.dropdown');
+
+if (competitionDropdown) {
+    const competitionLink = competitionDropdown.querySelector('a');
+
+    competitionLink.addEventListener('click', function(event) {
+        if (window.innerWidth <= 600) {
+            if (!competitionDropdown.classList.contains('open')) {
+                event.preventDefault();
+                competitionDropdown.classList.add('open');
+            }
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!competitionDropdown.contains(event.target)) {
+            competitionDropdown.classList.remove('open');
+        }
+    });
+}
+</script>
+
 </body>
 </html>
