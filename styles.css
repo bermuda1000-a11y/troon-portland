@@ -758,6 +758,21 @@ Or, if you only want to affe
     white-space: nowrap;
 }
 
+.fixture-badge.carlow {
+    background-color: #b2c2f7;
+    color: #003366;
+}
+
+.fixture-badge.martin {
+    background-color: #d4dbf0;
+    color: #003366;
+}
+
+.fixture-badge.event {
+    background-color: #dcfcb2;
+    color: #003366;
+}
+
 .fixture-match {
     display: block;
     line-height: 1.7;
