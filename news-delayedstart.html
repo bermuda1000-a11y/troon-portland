@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         CHANGE 1
+         Browser Title
+    ====================================================== -->
+
+    <title>AGM| Troon Portland Curling Club</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NEWS ARTICLE CHECKLIST
+
+□ Save As (e.g. club-championship-final.html)
+
+□ Change browser title
+□ Change article heading
+□ Change article date
+□ Replace article text
+□ Replace main photograph
+□ Replace caption
+□ Replace gallery photographs
+□ Add article to news.html
+□ Test
+□ Commit
+□ Push
+
+====================================================== -->
+
+<header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li class="dropdown">
+    <a href="competitions.html">Competitions</a>
+    <ul class="dropdown-menu">
+        <li><a href="carlow.html">Carlow Cup</a></li>
+        <li><a href="martin.html">Martin Inkstand</a></li>
+    </ul>
+</li>
+<li><a href="committee.html">Committee</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="news.html" class="active">News</a></li>
+<li><a href="fixtures.html">Fixtures</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="article-page">
+
+
+<!-- =====================================================
+     CHANGE 2
+     Article Heading
+====================================================== -->
+
+<h1>Greenacres Ice Problems</h1>
+
+<!-- =====================================================
+     CHANGE 3
+     Date
+====================================================== -->
+
+<p class="article-date">
+28 September 2026
+</p>
+
+<!-- =====================================================
+     CHANGE 4
+     Main Photograph
+
+     Replace filename only.
+
+     Example:
+
+     images/news/club-final-main.jpg
+
+====================================================== -->
+
+<a href="#agm1">
+    <img
+        class="article-photo"
+        src="images/news/home.jpg"
+        alt="Greenacres Ice Problems">
+</a>
+
+<!-- =====================================================
+     CHANGE 5
+     Caption
+====================================================== -->
+
+<p class="photo-caption">
+
+</p>
+
+<!-- =====================================================
+     CHANGE 6
+     Story
+====================================================== -->
+
+<p>
+Greenacres Ice Rink have experienced problems with the ice after running up for the start of the season. Richard Harding has apologised and is doing everything possible to restore the ice. Here is an extract from Richard's email to the Club:<BR>
+Unfortunately we will be unable to open the Club for curling on Tuesday 22 September as planned.<BR>
+
+As many of you will recall from last season we experienced air locks in our rink floor during throughout last season and we were also losing the seal around sheets E and F which resulted in a serious challenge to maintain level ice on these two sheets. The air locks led to areas of the ice which did not freeze to the same temperature as the rest of the floor and this meant we could not use these sheets from time to time where this issue occurred throughout last season.
+
+
+</p>
+
+<p>
+We have carried out significant works on the rinks during the summer break. First of all we have renewed the seal around both ice sheets, A to D and E & F so we should no longer lose any ice around the perimeter of either hall. The result should mean more level ice. We have also inserted several new bleed points to allow any air in our system to escape through these new non-return valves which are closer to the areas we experienced air-lock issues last season. 
+</p>
+
+<p>
+
+</p>
+<!-- =====================================================
+     CHANGE 7
+     Gallery Photographs
+
+     Replace the filenames only.
+
+====================================================== -->
+
+
+
+<!-- =====================================================
+     CHANGE 8
+     Additional paragraphs (optional)
+
+     Add more paragraphs here if required.
+
+====================================================== -->
+
+<!--
+<p>
+Additional text...
+</p>
+-->
+
+<p class="back-link">
+    <a href="news.html" class="back-button">&larr; Back to News</a>
+</p>
+
+</main>
+
+<footer>
+    <p>© 2026 Troon Portland Curling Club • Founded 1830 • All Rights Reserved
+<a href="privacy.html">Privacy Policy</a> •
+<a href="https://www.facebook.com/TroonPortlandCurling" target="_blank" rel="noopener noreferrer">Facebook</a> •
+troonportlandcurling@gmail.com</p>
+</footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
+
+<script>
+const competitionDropdown = document.querySelector('nav li.dropdown');
+
+if (competitionDropdown) {
+    const competitionLink = competitionDropdown.querySelector('a');
+
+    competitionLink.addEventListener('click', function(event) {
+        if (window.innerWidth <= 600) {
+
+            if (!competitionDropdown.classList.contains('open')) {
+                event.preventDefault();
+                competitionDropdown.classList.add('open');
+            }
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!competitionDropdown.contains(event.target)) {
+            competitionDropdown.classList.remove('open');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
