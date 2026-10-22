@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         CHANGE 1
+         Browser Title
+    ====================================================== -->
+
+    <title>AGM| Troon Portland Curling Club</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NEWS ARTICLE CHECKLIST
+
+□ Save As (e.g. club-championship-final.html)
+
+□ Change browser title
+□ Change article heading
+□ Change article date
+□ Replace article text
+□ Replace main photograph
+□ Replace caption
+□ Replace gallery photographs
+□ Add article to news.html
+□ Test
+□ Commit
+□ Push
+
+====================================================== -->
+
+<header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li class="dropdown">
+    <a href="competitions.html">Competitions</a>
+    <ul class="dropdown-menu">
+        <li><a href="carlow.html">Carlow Cup</a></li>
+        <li><a href="martin.html">Martin Inkstand</a></li>
+    </ul>
+</li>
+<li><a href="committee.html">Committee</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="news.html" class="active">News</a></li>
+<li><a href="fixtures.html">Fixtures</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="article-page">
+
+
+<!-- =====================================================
+     CHANGE 2
+     Article Heading
+====================================================== -->
+
+<h1>Greenacres Ice Problems</h1>
+
+<!-- =====================================================
+     CHANGE 3
+     Date
+====================================================== -->
+
+<p class="article-date">
+21 October 2026
+</p>
+
+<!-- =====================================================
+     CHANGE 4
+     Main Photograph
+
+     Replace filename only.
+
+     Example:
+
+     images/news/club-final-main.jpg
+
+====================================================== -->
+
+<a href="#agm1">
+    <img
+        class="article-photo"
+        src="images/news/home.jpg"
+        alt="Greenacres Ice Problems">
+</a>
+
+<!-- =====================================================
+     CHANGE 5
+     Caption
+====================================================== -->
+
+<p class="photo-caption">
+
+</p>
+
+<!-- =====================================================
+     CHANGE 6
+     Story
+====================================================== -->
+
+<p>
+The latest information from Greenacre's ice rink is that the problems with the freezing pipes have not yet been resolved, and the earliest opening date is Friday 30 October 2026. <BR>
+    They are working hard to clean out all the pipes, and they are confident this will be successful. <BR>
+The Eglington Jug has been postponed and will now be played 22nd to 24th January 2027. 
+
+
+</p>
+<!-- =====================================================
+     CHANGE 7
+     Gallery Photographs
+
+     Replace the filenames only.
+
+====================================================== -->
+
+
+
+<!-- =====================================================
+     CHANGE 8
+     Additional paragraphs (optional)
+
+     Add more paragraphs here if required.
+
+====================================================== -->
+
+<!--
+<p>
+Additional text...
+</p>
+-->
+
+<p class="back-link">
+    <a href="news.html" class="back-button">&larr; Back to News</a>
+</p>
+
+</main>
+
+<footer>
+    <p>© 2026 Troon Portland Curling Club • Founded 1830 • All Rights Reserved
+<a href="privacy.html">Privacy Policy</a> •
+<a href="https://www.facebook.com/TroonPortlandCurling" target="_blank" rel="noopener noreferrer">Facebook</a> •
+troonportlandcurling@gmail.com</p>
+</footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
+
+<script>
+const competitionDropdown = document.querySelector('nav li.dropdown');
+
+if (competitionDropdown) {
+    const competitionLink = competitionDropdown.querySelector('a');
+
+    competitionLink.addEventListener('click', function(event) {
+        if (window.innerWidth <= 600) {
+
+            if (!competitionDropdown.classList.contains('open')) {
+                event.preventDefault();
+                competitionDropdown.classList.add('open');
+            }
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!competitionDropdown.contains(event.target)) {
+            competitionDropdown.classList.remove('open');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
