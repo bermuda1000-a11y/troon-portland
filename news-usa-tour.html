@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         CHANGE 1
+         Browser Title
+    ====================================================== -->
+
+    <title>USA Womens Tour | Troon Portland Curling Club</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NEWS ARTICLE CHECKLIST
+
+□ Save As (e.g. club-championship-final.html)
+
+□ Change browser title
+□ Change article heading
+□ Change article date
+□ Replace article text
+□ Replace main photograph
+□ Replace caption
+□ Replace gallery photographs
+□ Add article to news.html
+□ Test
+□ Commit
+□ Push
+
+====================================================== -->
+
+<header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li class="dropdown">
+    <a href="competitions.html">Competitions</a>
+    <ul class="dropdown-menu">
+        <li><a href="carlow.html">Carlow Cup</a></li>
+        <li><a href="martin.html">Martin Inkstand</a></li>
+    </ul>
+</li>
+<li><a href="committee.html">Committee</a></li>
+<li><a href="archive.html">Archive</a></li>
+<li><a href="news.html" class="active">News</a></li>
+<li><a href="fixtures.html">Fixtures</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="article-page">
+
+
+<!-- =====================================================
+     CHANGE 2
+     Article Heading
+====================================================== -->
+
+<h1>USA Women's Tour to Scotland 2026</h1>
+
+<!-- =====================================================
+     CHANGE 3
+     Date
+====================================================== -->
+
+<p class="article-date">
+5 November2026
+</p>
+
+<!-- =====================================================
+     CHANGE 4
+     Main Photograph
+
+     Replace filename only.
+
+     Example:
+
+     images/news/club-final-main.jpg
+
+====================================================== -->
+
+<img
+class="article-photo"
+src="images/news/usatour1.jpg"
+alt="USA Women's Tour">
+
+<!-- =====================================================
+     CHANGE 5
+     Caption
+====================================================== -->
+
+<p class="photo-caption">
+USA Women's Tour participants pose for a photo.
+</p>
+
+<!-- =====================================================
+     CHANGE 6
+     Story
+====================================================== -->
+
+<p>
+Twenty USA women curlers are currently on their tour of Scotland. As a member of the 2022 Scottish Tour to USA, Mara played against the tourists in their Opening Bonspiel in Edinburgh, and attended the Opening Banquet.</p>
+<p> The tourists are now travelling around the ice rinks, playing teams from each rink for the Marguerite Roberts Trophy. On Monday they played a Greenacres / Ayr team at Stranraer. </p>
+<p>Mary and Elizabeth were on the organising committee, and Mary, Alison, Janice, Mara, Margaret, Jennifer (Dundonald) and Babs (Galston) represented Ayr. After exciting games played in excellent spirit, the Ayr / Greenacres team finished 8 shots up against the tourists - an excellent result!
+</p>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+<!-- =====================================================
+     CHANGE 7
+     Gallery Photographs
+
+     Replace the filenames only.
+
+====================================================== -->
+
+<div class="gallery two-image-gallery">
+
+    <figure>
+        <a href="#bowling2">
+            <img src="images/news/usatour2.jpg"
+                 alt="USA Women's Tour">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+
+    <figure>
+        <a href="#bowling3">
+            <img src="images/news/usatour1.jpg"
+                 alt="USA Women's Tour">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+
+</div>
+
+<!-- Lightboxes -->
+<div id="bowling2" class="lightbox">
+
+    <a href="#bowling3" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/usatour2.jpg" alt="USA Women's Tour">
+    </a>
+
+    <a href="#bowling3" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+<div id="bowling3" class="lightbox">
+
+    <a href="#bowling2" class="lightbox-prev">&#10094;</a>
+
+    <a href="#">
+        <img src="images/news/usatour1.jpg" alt="USA Women's Tour">
+    </a>
+
+    <a href="#bowling2" class="lightbox-next">&#10095;</a>
+
+</div>
+
+
+
+<!-- =====================================================
+     CHANGE 8
+     Additional paragraphs (optional)
+
+     Add more paragraphs here if required.
+
+====================================================== -->
+
+<!--
+<p>
+Additional text...
+</p>
+-->
+
+<p class="back-link">
+    <a href="news.html" class="back-button">&larr; Back to News</a>
+</p>
+
+</main>
+
+<footer>
+    <p>© 2026 Troon Portland Curling Club • Founded 1830 • All Rights Reserved
+<a href="privacy.html">Privacy Policy</a> •
+<a href="https://www.facebook.com/TroonPortlandCurling" target="_blank" rel="noopener noreferrer">Facebook</a> •
+troonportlandcurling@gmail.com</p>
+</footer>
+
+
+<script>
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        window.location.hash = '';
+    }
+});
+</script>
+
+<script>
+const competitionDropdown = document.querySelector('nav li.dropdown');
+
+if (competitionDropdown) {
+    const competitionLink = competitionDropdown.querySelector('a');
+
+    competitionLink.addEventListener('click', function(event) {
+        if (window.innerWidth <= 600) {
+
+            if (!competitionDropdown.classList.contains('open')) {
+                event.preventDefault();
+                competitionDropdown.classList.add('open');
+            }
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!competitionDropdown.contains(event.target)) {
+            competitionDropdown.classList.remove('open');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
