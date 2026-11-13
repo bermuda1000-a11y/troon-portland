@@ -885,3 +885,104 @@ Or, if you only want to affe
 .team-list + h3 {
     margin-top: 30px;
 }
+
+/* =====================================================
+   LIVE LEAGUE TABLES
+   ===================================================== */
+
+.league-table-section {
+    width: 100%;
+    margin: 35px 0 45px;
+}
+
+.league-table-heading {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.league-table-note {
+    text-align: center;
+    color: #555;
+    margin: 0 0 18px;
+    font-size: 1rem;
+}
+
+.league-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #9ccfff;
+    box-shadow: 0 2px 8px rgba(0, 51, 102, 0.12);
+}
+
+.live-league-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+}
+
+.live-league-table thead th {
+    background: linear-gradient(to bottom, #d9edff, #b9dcfa);
+    color: #003366;
+    padding: 15px 10px;
+    border: 1px solid #8fc8ff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.live-league-table tbody td,
+.live-league-table tbody th {
+    padding: 13px 10px;
+    border: 1px solid #b7dafa;
+    white-space: nowrap;
+}
+
+.live-league-table tbody tr:nth-child(even) {
+    background-color: #dceeff;
+}
+
+.live-league-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.live-league-table .league-position,
+.live-league-table .league-points {
+    background-color: #07549a;
+    color: #fff;
+    font-weight: bold;
+}
+
+.live-league-table .league-team-name {
+    color: #003b7a;
+    text-align: left;
+    font-weight: bold;
+    min-width: 175px;
+}
+
+.league-table-footnote {
+    font-size: 14px !important;
+    color: #555;
+    text-align: right;
+    margin-top: 9px;
+}
+
+@media (max-width: 600px) {
+    .league-table-section {
+        margin: 25px 0 35px;
+    }
+
+    .league-table-heading {
+        font-size: 1.7rem;
+    }
+
+    .live-league-table {
+        font-size: 14px;
+    }
+
+    .live-league-table thead th,
+    .live-league-table tbody td,
+    .live-league-table tbody th {
+        padding: 10px 8px;
+    }
+}

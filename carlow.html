@@ -60,9 +60,32 @@
         </div>
 
     </div>
-    <img class="league-table"
-     src="images/comps/carlow_start.png"
-     alt="Carlow Cup">
+    <section class="league-table-section" aria-labelledby="carlow-table-heading">
+        <h2 id="carlow-table-heading" class="league-table-heading">Carlow Cup League Table</h2>
+        <p class="league-table-note">2026–2027 Season</p>
+        <div class="league-table-wrapper">
+            <table class="live-league-table" id="carlow-league-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Pos</th>
+                        <th scope="col">Team</th>
+                        <th scope="col">Played</th>
+                        <th scope="col">Won</th>
+                        <th scope="col">Drawn</th>
+                        <th scope="col">Lost</th>
+                        <th scope="col">Ends Won</th>
+                        <th scope="col">Shot Difference</th>
+                        <th scope="col">Shots Scored</th>
+                        <th scope="col">Points</th>
+                    </tr>
+                </thead>
+                <tbody id="carlow-league-body">
+                    <tr><td colspan="10">Loading league table…</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="league-table-footnote">Teams are ranked by points, ends won, shot difference, then total shots scored.</p>
+    </section>
 
 
 
@@ -154,6 +177,83 @@ if (competitionDropdown) {
         }
     });
 }
+</script>
+
+<script src="carlow-results.js"></script>
+<script>
+// Calculate and display the Carlow Cup league table from the match results.
+const carlowTeams = [
+    "Team Marr",
+    "Team Steele",
+    "Team Lindsay",
+    "Team A McCorkell",
+    "Team McKay",
+    "Team J McCorkell"
+];
+
+const carlowStats = {};
+carlowTeams.forEach(team => {
+    carlowStats[team] = {
+        team: team, played: 0, won: 0, drawn: 0, lost: 0,
+        endsWon: 0, shotsFor: 0, shotsAgainst: 0, points: 0
+    };
+});
+
+carlowResults.forEach(match => {
+    const home = carlowStats[match.team1];
+    const away = carlowStats[match.team2];
+    if (!home || !away) return;
+
+    home.played++;
+    away.played++;
+    home.shotsFor += match.shots1;
+    home.shotsAgainst += match.shots2;
+    away.shotsFor += match.shots2;
+    away.shotsAgainst += match.shots1;
+    home.endsWon += match.ends1;
+    away.endsWon += match.ends2;
+
+    if (match.shots1 > match.shots2) {
+        home.won++;
+        away.lost++;
+        home.points += 2;
+    } else if (match.shots2 > match.shots1) {
+        away.won++;
+        home.lost++;
+        away.points += 2;
+    } else {
+        home.drawn++;
+        away.drawn++;
+        home.points++;
+        away.points++;
+    }
+});
+
+const carlowTableRows = Object.values(carlowStats)
+    .map(team => ({ ...team, shotDifference: team.shotsFor - team.shotsAgainst }))
+    .sort((a, b) =>
+        b.points - a.points ||
+        b.endsWon - a.endsWon ||
+        b.shotDifference - a.shotDifference ||
+        b.shotsFor - a.shotsFor ||
+        a.team.localeCompare(b.team)
+    );
+
+const carlowTableBody = document.getElementById("carlow-league-body");
+carlowTableBody.innerHTML = carlowTableRows.map((team, index) => `
+    <tr>
+        <td class="league-position">${index + 1}</td>
+        <th scope="row" class="league-team-name">${team.team}</th>
+        <td>${team.played}</td>
+        <td>${team.won}</td>
+        <td>${team.drawn}</td>
+        <td>${team.lost}</td>
+        <td>${team.endsWon}</td>
+        <td>${team.shotDifference > 0 ? "+" : ""}${team.shotDifference}</td>
+        <td>${team.shotsFor}</td>
+        <td class="league-points">${team.points}</td>
+    </tr>
+`).join("");
 </script>
 </body>
 </html>
