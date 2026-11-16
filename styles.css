@@ -50,6 +50,37 @@ h2 {
 /* =====================================================
    2. NAVIGATION
    ===================================================== */
+/* CLUB HEADER */
+.site-header {
+    background-color: #07549A;
+    padding: 15px 20px;
+}
+
+.site-brand {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.site-brand img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.site-brand-text h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0 0 5px 0;
+}
+
+.site-brand-text p {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
 
 nav {
     background-color: #003366;
@@ -450,10 +481,10 @@ nav > ul > li.dropdown > ul.dropdown-menu li a {
 
 .gallery img:hover {
     transform: scale(1.04);
+}
 
 .gallery {
     justify-items: center;
-}
 }
 /* Lochend news article gallery */
 .lochend-gallery img {
@@ -984,5 +1015,25 @@ Or, if you only want to affe
     .live-league-table tbody td,
     .live-league-table tbody th {
         padding: 10px 8px;
+    }
+}
+
+/* CLUB HEADER - MOBILE */
+@media (max-width: 600px) {
+    .site-brand {
+        gap: 15px;
+    }
+
+    .site-brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .site-brand-text h1 {
+        font-size: 21px;
+    }
+
+    .site-brand-text p {
+        font-size: 15px;
     }
 }
