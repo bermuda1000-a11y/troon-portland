@@ -1,6 +1,7 @@
-// Carlow Cup 2026–2027 results.
+
+// Carlow Cup 2026–2027 results after Round 2.
 // Add one entry for each completed match.
-// Do not enter a match twice.
+// Team names must match those used on the website.
 
 const carlowResults = [
     {
@@ -20,5 +21,23 @@ const carlowResults = [
         shots2: 7,
         ends1: 3,
         ends2: 4
+    },
+    {
+        date: "2026-11-19",
+        team1: "Team Marr",
+        team2: "Team J McCorkell",
+        shots1: 5,
+        shots2: 7,
+        ends1: 3,
+        ends2: 4
+    },
+    {
+        date: "2026-11-19",
+        team1: "Team Steele",
+        team2: "Team A McCorkell",
+        shots1: 11,
+        shots2: 1,
+        ends1: 6,
+        ends2: 1
     }
 ];
